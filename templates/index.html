@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoJimbo - Tienda Tech Profesional</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>🖥️ TecnoJimbo</h1>
+                <p>Equipos Informáticos Premium</p>
+            </div>
+            
+            <div class="buscador">
+                <input type="text" id="input-buscar" placeholder="Buscar productos, marcas, modelos..." />
+                <button onclick="buscarProductos()">🔍</button>
+            </div>
+            
+            <div class="header-acciones">
+                <button class="btn-login" onclick="alert('Login - Próximamente')">👤 Login</button>
+                <div class="carrito-icon" onclick="toggleCarrito()">
+                    🛒 (<span id="carrito-count">0</span>)
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <div class="contenedor">
+        <!-- Sidebar - Categorías -->
+        <aside class="sidebar">
+            <h3>Categorías</h3>
+            <div id="categorias-list" class="categorias-list">
+                <button class="categoria-btn activa" onclick="filtrarCategoria('Todos')">
+                    Todos (2000)
+                </button>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <!-- Barra de Filtros -->
+            <div class="filtros-barra">
+                <div class="filtro-grupo">
+                    <label>Ordenar por:</label>
+                    <select id="ordenar-por" onchange="aplicarFiltros()">
+                        <option value="">Más relevante</option>
+                        <option value="precio_asc">Precio: Menor a Mayor</option>
+                        <option value="precio_desc">Precio: Mayor a Menor</option>
+                        <option value="disponibilidad">Mayor Disponibilidad</option>
+                        <option value="reciente">Más Reciente</option>
+                    </select>
+                </div>
+                
+                <div class="info-resultados">
+                    <span id="resultados-texto">Mostrando 24 de 2000 productos</span>
+                </div>
+            </div>
+
+            <!-- Grid de Productos -->
+            <div id="productos-grid" class="productos-grid">
+                <!-- Se cargarán dinámicamente aquí -->
+            </div>
+
+            <!-- Paginación -->
+            <div class="paginacion">
+                <button id="btn-anterior" class="btn-pag" onclick="irPagina(pagina_actual - 1)">← Anterior</button>
+                
+                <div id="numeros-paginas" class="numeros-paginas">
+                    <!-- Se cargarán dinámicamente -->
+                </div>
+                
+                <button id="btn-siguiente" class="btn-pag" onclick="irPagina(pagina_actual + 1)">Siguiente →</button>
+            </div>
+        </main>
+
+        <!-- Sidebar Carrito -->
+        <aside id="carrito-sidebar" class="carrito-sidebar">
+            <h3>Tu Carrito</h3>
+            <div id="carrito-items"></div>
+            <div class="carrito-total">
+                <strong>Total: $<span id="total-precio">0.00</span></strong>
+            </div>
+            <button class="btn-comprar" onclick="realizarCompra()">Comprar Ahora</button>
+            <button class="btn-cerrar-carrito" onclick="toggleCarrito()">✕ Cerrar</button>
+        </aside>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
