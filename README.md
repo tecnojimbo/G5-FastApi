@@ -71,9 +71,10 @@ Luego, abre tu navegador en `http://localhost:8080`.
 ## Capturas de Pantalla
 Aquí puedes ver algunas capturas de la aplicación en funcionamiento:
 
-![Ejecucion FastAPI](Imagenes/Capt._1.png)
+![Ejecucion FastAPI](Imagenes/captura1.png)
 
-![Ejecucion FastAPI](Imagenes/Capt._2.png)
+![Ejecucion FastAPI](Imagenes/captura2.png)
+
 
 
 
