@@ -73,12 +73,13 @@ Aquí puedes ver algunas capturas de la aplicación en funcionamiento:
 
 ![Ejecucion FastAPI](imagenes/captura1.png)
 
+
 ![Ejecucion FastAPI](imagenes/captura2.png)
 
 
+![Ejecucion FastAPI](imagenes/captura3.png)
 
 
-
-
+![Ejecucion FastAPI](imagenes/captura4.png)
 
 
