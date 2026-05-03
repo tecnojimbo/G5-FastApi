@@ -108,5 +108,3 @@ En Power BI, la presencia de datos inconsistentes o tipos incorrectos puede gene
 La introducción de valores extremos o manipulados puede distorsionar indicadores clave, llevando a conclusiones incorrectas y decisiones basadas en información no confiable. 
 Para mitigar estos riesgos, es fundamental implementar procesos de validación y sanitización de datos antes de su almacenamiento o análisis. Esto incluye limpiar caracteres sospechosos, validar tipos de datos y asegurar que la información provenga de fuentes confiables.
 Si no se controla la integridad de los datos desde el origen, todo el proceso de análisis puede verse comprometido, afectando tanto la seguridad como la calidad de la información utilizada para la toma de decisiones.
-
-
